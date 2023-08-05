@@ -1,16 +1,20 @@
-# Project Name
+# AI Doctor
 
- Add short description of project here > 
+ This project serves as an AI Doctor, merging medical expertise with machine learning. With the use of AI image recognition, it can detect human body parts and provide possible preliminary diagnoses. 
 
-![add image descrition here](direct image link here)
+The future is here! AI Doctor [Imgur](https://imgur.com/Nsvcgan)
+
 
 ## The Algorithm
 
-Add an explanation of the algorithm and how it works. Make sure to include details about how the code works, what it depends on, and any other relevant info. Add images or other descriptions for your project here. 
+This algorithm uses the detectnet, a part of NVIDIA's jetson-inference library. The data consisted of around 5,000 images of the three different body parts that are being tested, the head, leg, and arm. First, the data was trained through the detection module of the jetson-inference package. Through the training. the model identifies and analyzes the different anatomical structures. This algorithm then is able to detect the image through the webcam and identify the exact human body part associated with the image. 
 
 ## Running this project
 
-1. Add steps for running this project.
-2. Make sure to include any required libraries that need to be installed for your project to run.
+1: Click 'New Terminal'
+2: Type 'python3 finals.py /dev/video0'
+3: Show the body part to the webcam
 
-[View a video explanation here](video link)
+Note: Install jetson-inference package if it is not already installed
+
+View a video explanation here: https://youtu.be/wl97W8klouA
